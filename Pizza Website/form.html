@@ -1,0 +1,235 @@
+<!-- This is an HTML document for an Ordering Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering Form</title>    <!-- Title of the page -->
+    <link rel="stylesheet" href="./CSS/style.css">    <!-- External CSS file -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Bebas+Neue&family=Dancing+Script:wght@600&family=Slackside+One&display=swap" rel="stylesheet">
+</head>
+<!-- Body of the document with the 'base' class -->
+<body class="base">
+    <section class="page padding">
+      <!-- Heading of the form -->
+        <h1 class="text-center">Ordering Form</h1>
+        <form class="padding">
+            <br>
+            <h2>Pizza Size:</h2>
+            <!-- Pizza Size options -->
+            <ul>
+                <li class="tight padding">
+                    <input type="radio" id="small" name="size" value="Small">
+                    <label class="padding" for="small">Small</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="medium" name="size" value="Medium">
+                    <label class="padding" for="medium">Medium</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="large" name="size" value="Large">
+                    <label class="padding" for="large">Large</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="X-large" name="size" value="X-Large">
+                    <label class="padding" for="X-large">X-Large</label>
+                </li>
+            </ul>
+            <br>
+            <h2>Toppings:</h2>
+            <!-- Toppings options -->
+            <ul>
+                <li class="tight padding">
+                    <input type="checkbox" id="cheese" name="toppings[]" value="Cheese">
+                    <label class="padding" for="cheese">Cheese</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="pepperoni" name="toppings[]" value="Pepperoni">
+                    <label class="padding" for="pepperoni">Pepperoni</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="mushrooms" name="toppings[]" value="Mushrooms">
+                    <label class="padding" for="mushrooms">Mushrooms</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="olives" name="toppings[]" value="Olives">
+                    <label class="padding" for="olives">Olives</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="onions" name="toppings[]" value="Onions">
+                    <label class="padding" for="onions">Onions</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="bell-peppers" name="toppings[]" value="Bell Peppers">
+                    <label class="padding" for="bell-peppers">Bell Peppers</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="sausage" name="toppings[]" value="Sausage">
+                    <label class="padding" for="sausage">Sausage</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="ham" name="toppings[]" value="Ham">
+                    <label class="padding" for="ham">Ham</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="bacon" name="toppings[]" value="Bacon">
+                    <label class="padding" for="bacon">Bacon</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="pineapple" name="toppings[]" value="Pineapple">
+                    <label class="padding" for="pineapple">Pineapple</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="jalapenos" name="toppings[]" value="Jalapenos">
+                    <label class="padding" for="jalapenos">Jalapenos</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="spinach" name="toppings[]" value="Spinach">
+                    <label class="padding" for="spinach">Spinach</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="tomatoes" name="toppings[]" value="Tomatoes">
+                    <label class="padding" for="tomatoes">Tomatoes</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="basil" name="toppings[]" value="Basil">
+                    <label class="padding" for="basil">Basil</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="extra-cheese" name="toppings[]" value="Extra Cheese">
+                    <label class="padding" for="extra-cheese">Extra Cheese</label>
+                </li>
+            </ul>
+            <br>
+            <h2>Sauces:</h2>
+           <!-- Sauces options -->
+            <ul>
+                <li class="tight padding">
+                    <input type="radio" id="marinara" name="sauce" value="Marinara">
+                    <label class="padding" for="marinara">Marinara</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="bbq" name="sauce" value="BBQ Sauce">
+                    <label class="padding" for="bbq">BBQ Sauce</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="pesto" name="sauce" value="Pesto">
+                    <label class="padding" for="pesto">Pesto</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="alfredo" name="sauce" value="Alfredo">
+                    <label class="padding" for="alfredo">Alfredo</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="garlic" name="sauce" value="Garlic Sauce">
+                    <label class="padding" for="garlic">Garlic Sauce</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="ranch" name="sauce" value="Ranch Dressing">
+                    <label class="padding" for="ranch">Ranch Dressing</label>
+                </li>
+            </ul>
+            <br>
+            <h2>Crust Types:</h2>
+            <!-- Crust options -->
+            <ul>
+                <li class="tight padding">
+                    <input type="radio" id="regular" name="crust" value="Regular">
+                    <label class="padding" for="regular">Regular</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="thin-crust" name="crust" value="Thin Crust">
+                    <label class="padding" for="thin-crust">Thin Crust</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="thick-crust" name="crust" value="Thick Crust">
+                    <label class="padding" for="thick-crust">Thick Crust</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="stuffed-crust" name="crust" value="Stuffed Crust">
+                    <label class="padding" for="stuffed-crust">Stuffed Crust</label>
+                </li>
+            </ul>
+            
+            <h2>Specialty Pizzas:</h2>
+            <!-- Specialty options -->
+            <ul>
+                <li class="tight padding">
+                    <input type="checkbox" id="margherita" name="specialty[]" value="Margherita">
+                    <label class="padding" for="margherita">Margherita</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="meat-lovers" name="specialty[]" value="Meat Lovers">
+                    <label class="padding" for="meat-lovers">Meat Lovers</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="veggie-delight" name="specialty[]" value="Veggie Delight">
+                    <label class="padding" for="veggie-delight">Veggie Delight</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="hawaiian" name="specialty[]" value="Hawaiian">
+                    <label class="padding" for="hawaiian">Hawaiian</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="bbq-chicken" name="specialty[]" value="BBQ Chicken">
+                    <label class="padding" for="bbq-chicken">BBQ Chicken</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="supreme" name="specialty[]" value="Supreme">
+                    <label class="padding" for="supreme">Supreme</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="four-cheese" name="specialty[]" value="Four Cheese">
+                    <label class="padding" for="four-cheese">Four Cheese</label>
+                </li>
+                <li class="tight padding">
+                    <input type="checkbox" id="buffalo-chicken" name="specialty[]" value="Buffalo Chicken">
+                    <label class="padding" for="buffalo-chicken">Buffalo Chicken</label>
+                </li>
+            </ul>
+            <br>
+            <h2>Special Instructions:</h2>
+            <textarea class="white border rounded tight padding margin-bottom" name="instructions" rows="4" cols="50" placeholder="Enter any specific requests or preferences"></textarea>
+            <!-- Customer Information -->
+            <h2>Customer Information:</h2>
+            <label class="padding" for="name">Name:</label>
+            <input class="white border rounded tight padding margin-bottom" type="text" id="name" name="name" required>
+
+            <label class="padding" for="email">Email:</label>
+            <input class="white border rounded tight padding margin-bottom" type="email" id="email" name="email" required>
+            
+            <label class="padding" for="phone">Phone Number:</label>
+            <input class="white border rounded tight padding margin-bottom" type="tel" id="phone" name="phone" required>
+            
+            <h2>Delivery Address:</h2>
+            <label class="padding" for="street">Street Address:</label>
+            <input class="white border rounded tight padding margin-bottom" type="text" id="street" name="street" required>
+            
+            <label class="padding" for="city">City:</label>
+            <input class="white border rounded tight padding margin-bottom" type="text" id="city" name="city" required>
+            
+            <label class="padding" for="state">State:</label>
+            <input class="white border rounded tight padding margin-bottom" type="text" id="state" name="state" required>
+            
+            <label class="padding" for="zip">Zip Code:</label>
+            <input class="white border rounded tight padding margin-bottom" type="text" id="zip" name="zip" required>
+            
+            <h2>Payment Method:</h2>
+            <ul>
+                <li class="tight padding">
+                    <input type="radio" id="cash" name="payment" value="Cash on Delivery">
+                    <label class="padding" for="cash">Cash on Delivery</label>
+                </li>
+                <li class="tight padding">
+                    <input type="radio" id="card" name="payment" value="Credit/Debit Card">
+                    <label class="padding" for="card">Credit/Debit Card</label>
+                </li>
+            </ul>
+            <br>
+            <button class="submit-class" type="submit">Submit Order</button>
+            <h5>---------------------------------------</h5>
+        </form>
+    </section>
+</body>
+</html>

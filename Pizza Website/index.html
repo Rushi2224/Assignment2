@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Vale</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Bebas+Neue&family=Dancing+Script:wght@600&family=Slackside+One&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <!-- Website Title -->
+    <h1>Pizza Vale</h1>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <!-- Navigation Links -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Near Me</a></li>
+        </ul>
+    </nav>
+    <!-- Line breaks for spacing -->
+    <br>
+    <br>
+    <!-- Section Heading for the Pizza Menu -->
+    <h2>Delicious Pizza Menu</h2>
+    <!-- Section containing pizza items -->
+    <section class="items">
+        <!-- Individual Pizza Item -->
+        <div class="item">
+            <img src="./img/pizza1.png" alt="pizza image1">
+            <h4>MultiTaste Pizza: $18.99</h4>
+            <button>Order Now</button> 
+        </div>
+        <div class="item">
+            <img src="./img/pizza2.png" alt="pizza image2">
+            <h4>Shrimp Pizza: $16.79</h4>
+            <button>Order Now</button>
+        </div>
+        <div class="item">
+            <img src="./img/pizza3.png" alt="pizza image3">
+            <h4>Pepperoni Pizza: $17.99</h4>
+            <button>Order Now</button>
+        </div>
+        <div class="item">
+            <img src="./img/pizza4.png" alt="pizza image3">
+            <h4>Mushroom Pizza: $15.49</h4>
+            <button>Order Now</button>
+        </div>
+        <div class="item">
+            <img src="./img/pizza5.png" alt="pizza image3">
+            <h4>Red Pepper & Parsley Pizza: $18.49</h4>
+            <button>Order Now</button>
+        </div>
+        <div class="item">
+            <img src="./img/pizza6.png" alt="pizza image3">
+            <h4>Veggie Delight Pizza: $17.69</h4>
+            <button>Order Now</button>
+        </div>
+        <div class="item">
+            <img src="./img/pizza7.jpg" alt="pizza image3">
+            <h4>Mini Pizza: $13.79</h4>
+            <button>Order Now</button>
+        </div>
+        <div class="item">
+            <img src="./img/pizza8.jpg" alt="pizza image3">
+            <h4>Thin Crust Pizza: $15.89</h4>
+            <button>Order Now</button>
+        </div>
+        <div class="item">
+            <img src="./img/pizza9.png" alt="pizza image3">
+            <h4>Hand Tossed Pizza: $18.69</h4>
+            <button>Order Now</button>
+        </div>
+    </section>
+    <!-- JavaScript script to handle click events on pizza items -->
+    <script>
+        // Function to handle the click event on the item and redirect to form.html
+        function goToFormPage() {
+            window.location.href = "./form.html";
+        }
+
+        // Get all the elements with class "item"
+        const items = document.querySelectorAll('.item');
+
+        // Add a click event listener to each item to execute goToFormPage function
+        items.forEach(item => {
+            item.addEventListener('click', goToFormPage);
+        });
+    </script>
+</body>
+</html>
